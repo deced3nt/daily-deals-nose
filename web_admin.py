@@ -17,12 +17,12 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
-app.secret_key = os.getenv('ADMIN_PASSWORD', 'your-secret-key-change-this')
+app.secret_key = os.getenv('ADMIN_PASSWORD', 'mzH6GqatLNN584S')
 
 # Supabase setup
-SUPABASE_URL = os.getenv('SUPABASE_URL')
-SUPABASE_KEY = os.getenv('SUPABASE_SERVICE_KEY')
-ADMIN_PASSWORD = os.getenv('ADMIN_PASSWORD', 'admin123')
+SUPABASE_URL = os.getenv('SUPABASE_URL', 'https://dntdvjivdtfyslmwjvzs.supabase.co')
+SUPABASE_KEY = os.getenv('SUPABASE_SERVICE_KEY', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRudGR2aml2ZHRmeXNsbXdqdnpzIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MTEzNTU3MiwiZXhwIjoyMDY2NzExNTcyfQ.J-8vuKCKxmZNntfc0DHyXiRQoIeKFhiSLMflDUj59fQ')
+ADMIN_PASSWORD = os.getenv('ADMIN_PASSWORD', 'mzH6GqatLNN584S')
 
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
