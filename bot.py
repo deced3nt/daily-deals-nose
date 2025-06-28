@@ -27,11 +27,11 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Environment variables
-BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
-CHANNEL_ID = os.getenv('TELEGRAM_CHANNEL_ID')
-SUPABASE_URL = os.getenv('SUPABASE_URL')
-SUPABASE_KEY = os.getenv('SUPABASE_SERVICE_KEY')
-ADMIN_PASSWORD = os.getenv('ADMIN_PASSWORD', 'admin123')
+BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '7748001064:AAEsZSx5DQCzBpszbVfutCDZfqB0YKBNNgw')
+CHANNEL_ID = os.getenv('TELEGRAM_CHANNEL_ID', '-1002500481488')
+SUPABASE_URL = os.getenv('SUPABASE_URL', 'https://dntdvjivdtfyslmwjvzs.supabase.co')
+SUPABASE_KEY = os.getenv('SUPABASE_SERVICE_KEY', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRudGR2aml2ZHRmeXNsbXdqdnpzIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MTEzNTU3MiwiZXhwIjoyMDY2NzExNTcyfQ.J-8vuKCKxmZNntfc0DHyXiRQoIeKFhiSLMflDUj59fQ')
+ADMIN_PASSWORD = os.getenv('ADMIN_PASSWORD', 'mzH6GqatLNN584S')
 
 # Initialize Supabase
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
